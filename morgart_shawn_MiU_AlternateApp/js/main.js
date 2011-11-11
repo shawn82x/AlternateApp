@@ -2,6 +2,50 @@
 
 // Author: Shawn R. Morgart
 
+$("#newclPage").swiperight(function() {
+$.mobile.changePage("#newcl2");
+});
+
+
+$("#newcl2").swiperight(function() {
+$.mobile.changePage("#newcl3");
+});
+
+
+$("#newcl3").swiperight(function() {
+$.mobile.changePage("#newcl4");
+});
+
+
+$("#newcl4").swiperight(function() {
+$.mobile.changePage("#newcl5");
+});
+
+
+$("#newcl5").swiperight(function() {
+$.mobile.changePage("#newcl6");
+});
+
+
+$("#newcl7").swiperight(function() {
+$.mobile.changePage("#newcl8");
+});
+
+
+$("#newcl8").swiperight(function() {
+$.mobile.changePage("#newclPage");
+});
+
+
+
+
+
+
+
+
+
+
+/*
 //Wait until the DOM is ready.
 window.addEventListener("DOMContentLoaded", function(){
    
@@ -519,8 +563,10 @@ window.addEventListener("DOMContentLoaded", function(){
     save.addEventListener("click", validate);
     
     
+    
+    
      // JSON Object which will auto populate local storage.
-/*     
+     
     function autoFillResi(){
         var json = {
             "testClient1": {
@@ -817,7 +863,7 @@ window.addEventListener("DOMContentLoaded", function(){
 
     }
     
-*/
+
 
 });
-       
+*/       

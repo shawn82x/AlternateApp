@@ -57,11 +57,11 @@
         
 
         <div data-role="select" id="select">
-            <label for="group" class="ui-hidden-accessible">*Type of Account:</label>
+            <label for="group" >*Type of Account:</label>
         </div>
         
     
-    
+	    
                 <h3>General Data</h3>
                     <div data-role="fieldcontain">
                         <label for="fname" class="ui-hidden-accessible">First Name:</label>
@@ -102,11 +102,16 @@
                         <label for="email" class="ui-hidden-accessible">Email:</label>
                         <input data-theme="a" type="email" name="email" id="email" value="" placeholder="Email:"/>
                     </div>
-		    <p><a href="#newcl2" data-role="button" data-theme="a">Show Representational Style</a></p>
+		    <div data-role="content">
+			<p>
+			    <ul data-role="listview" data-inset="true" data-theme="c">
+				<li id="listitem">Swipe Right to view Page 1</li>
+			    </ul>
+			</p>
+		    </div>
+
             
     </div>
-	
-
 	
             <div data-role="page" data-theme="a" id="newcl2" data-add-back-btn="true">
 		<div data-role="header">
