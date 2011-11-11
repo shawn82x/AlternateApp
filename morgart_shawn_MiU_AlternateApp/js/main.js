@@ -2,38 +2,79 @@
 
 // Author: Shawn R. Morgart
 
+$("#newclPage").swipeleft(function() {
+    $.mobile.changePage("#newcl2");
+});
+
+$("#newcl2").swipeleft(function() {
+    $.mobile.changePage("#newcl3");
+});
+
+
+$("#newcl3").swipeleft(function() {
+    $.mobile.changePage("#newcl4");
+});
+
+
+$("#newcl4").swipeleft(function() {
+    $.mobile.changePage("#newcl5");
+});
+
+
+$("#newcl5").swipeleft(function() {
+    $.mobile.changePage("#newcl6");
+});
+
+
+$("#newcl6").swipeleft(function() {
+    $.mobile.changePage("#newcl7");
+});
+
+
+$("#newcl7").swipeleft(function() {
+    $.mobile.changePage("#newcl8");
+});
+
+$("#newcl8").swipeleft(function() {
+    $.mobile.changePage("#newclPage");
+});
+
+
+
 $("#newclPage").swiperight(function() {
-$.mobile.changePage("#newcl2");
+    $.mobile.changePage("#newcl8");
 });
-
-
-$("#newcl2").swiperight(function() {
-$.mobile.changePage("#newcl3");
-});
-
-
-$("#newcl3").swiperight(function() {
-$.mobile.changePage("#newcl4");
-});
-
-
-$("#newcl4").swiperight(function() {
-$.mobile.changePage("#newcl5");
-});
-
-
-$("#newcl5").swiperight(function() {
-$.mobile.changePage("#newcl6");
-});
-
-
-$("#newcl7").swiperight(function() {
-$.mobile.changePage("#newcl8");
-});
-
 
 $("#newcl8").swiperight(function() {
-$.mobile.changePage("#newclPage");
+    $.mobile.changePage("#newcl7");
+});
+
+$("#newcl7").swiperight(function() {
+    $.mobile.changePage("#newcl6");
+});
+
+$("#newcl6").swiperight(function() {
+    $.mobile.changePage("#newcl5");
+});
+
+$("#newcl5").swiperight(function() {
+    $.mobile.changePage("#newcl4");
+});
+
+$("#newcl4").swiperight(function() {
+    $.mobile.changePage("#newcl4");
+});
+
+$("#newcl3").swiperight(function() {
+    $.mobile.changePage("#newcl2");
+});
+
+$("#newcl2").swiperight(function() {
+    $.mobile.changePage("#newcl1");
+});
+
+$("#newcl1").swiperight(function() {
+    $.mobile.changePage("#newclPage");
 });
 
 
