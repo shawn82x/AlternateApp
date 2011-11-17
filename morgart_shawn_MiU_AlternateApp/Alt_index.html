@@ -15,6 +15,19 @@
     <link rel="stylesheet" href="themes/shawn_custom_themes1.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="js/libs/modernizr.custom.min.js"></script>
+     <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js'></script>
+    <script src="js/libs/organictabs.jquery.js"></script>
+    <script>
+        $(function() {
+    
+            $("#example-one").organicTabs();
+            
+            $("#example-two").organicTabs({
+                "speed": 200
+            });
+    
+        });
+    </script>
     <title>Shawn R. Morgart</title>
 </head>
 
@@ -65,10 +78,10 @@
 			<li><a href="#neuro">Neurolinguistics</a></li>
 			<li><a href="#values">Values</a></li>
 		</ul>
-	    </div><!-- /navbar -->
+	    </div>
 	</div>
     </div>
-	
+
 	    <div data-role="page" id="general" data-add-back-btn="true" >
                 <h3>General Data</h3>
                     <div data-role="fieldcontain">
