@@ -12,6 +12,7 @@
     <meta name="viewport" content="target-densitydpi=device-dpi" />
     <meta http-equiv="cleartype" content="on">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+    <link rel="stylesheet" href="themes/shawn_custom_themes1.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="js/libs/modernizr.custom.min.js"></script>
     <title>Shawn R. Morgart</title>
@@ -49,17 +50,26 @@
     
     
 <!-- Add New Client Page  -->    
-    <div data-role="page" id="newclPage" data-add-back-btn="true" ></a>">
+    <div data-role="page" id="newclPage" data-add-back-btn="true" >
         <div data-role="header">
             <img src="images/key_visual1.jpg" >        
 	    <H1>Add New Client</H1>
+	    <div data-role="navbar">
+		<ul>
+			<li><a href="#general" class="ui-btn-active">General Data</a></li>
+			<li><a href="#behavioral">Behavioral Styles</a></li>
+			<li><a href="#channels">Channels</a></li>
+			<li><a href="#convincers">Convincers</a></li>
+			<li><a href="#disc">DISC</a></li>
+			<li><a href="#meta">Meta-Programs</a></li>
+			<li><a href="#neuro">Neurolinguistics</a></li>
+			<li><a href="#values">Values</a></li>
+		</ul>
+	    </div><!-- /navbar -->
 	</div>
-        
-
-        <div data-role="select" id="select">
-            <label for="group" >*Type of Account:</label>
-        </div>
-    
+    </div>
+	
+	    <div data-role="page" id="general" data-add-back-btn="true" >
                 <h3>General Data</h3>
                     <div data-role="fieldcontain">
                         <label for="fname" class="ui-hidden-accessible">First Name:</label>
@@ -100,18 +110,11 @@
                         <label for="email" class="ui-hidden-accessible">Email:</label>
                         <input data-theme="a" type="email" name="email" id="email" value="" placeholder="Email:"/>
                     </div>
-		    <div data-role="content">
-			<p>
-			    <ul data-role="listview" data-inset="true" data-theme="c">
-				<li id="listitem">Swipe Right to view Page 1</li>
-			    </ul>
-			</p>
-		    </div>
-
+		    
+	    </div>
             
-    </div>
 	
-            <div data-role="page" data-theme="a" id="newcl2" data-add-back-btn="true">
+            <div data-role="page" data-theme="a" id="neuro" data-add-back-btn="true">
 		<div data-role="header">
 		    <img src="images/key_visual1.jpg" >        
 		</div>
@@ -128,7 +131,7 @@
                     </fieldset>
 	    </div>
 	    
-            <div data-role="page" data-theme="a" id="newcl3" data-add-back-btn="true">        
+            <div data-role="page" data-theme="a" id="meta" data-add-back-btn="true">        
                     <h4>Meta-Programs (Rank -10 to 10)</h4>
                     <label for="direction">Direction: toward vs. away:</label>
                         <input type="range" data-theme="b" name="direction" id="direction" value="0" min="-10" max="10"  />
@@ -144,7 +147,7 @@
                         <input type="range" data-theme="b" name="change" id="change" value="0" min="-10" max="10"  />
 	    </div>
 	    
-	    <div data-role="page" data-theme="a" id="newcl4" data-add-back-btn="true">
+	    <div data-role="page" data-theme="a" id="channels" data-add-back-btn="true">
 		    <h4>Channels</h4>
                     <fieldset data-role="controlgroup">
                         <legend>How one best learns.</legend>
@@ -159,7 +162,7 @@
                     </fieldset>
 	    </div>
 	    
-            <div data-role="page" data-theme="a" id="newcl5" data-add-back-btn="true">        
+            <div data-role="page" data-theme="a" id="convincers" data-add-back-btn="true">        
                     <h4>Convincers</h4>
                     <fieldset data-role="controlgroup">
                         <legend>How one most easily convinces oneself.</legend>
@@ -174,7 +177,7 @@
                     </fieldset>
             </div>
         
-            <div data-role="page" data-theme="a" id="newcl6" data-add-back-btn="true">
+            <div data-role="page" data-theme="a" id="values" data-add-back-btn="true">
 		<h3>Values</h3>
 		<h4>Values (Rank 0 to 100)</h4>
                     <label for="theor">Theoretical: knowledge, problem solver.</label>
@@ -191,7 +194,7 @@
                         <input type="range" data-theme="b" name="trad" id="trad" value="0" min="0" max="100"  />
             </div>
         
-            <div data-role="page" data-theme="a" id="newcl7" data-add-back-btn="true">
+            <div data-role="page" data-theme="a" id="behavioral" data-add-back-btn="true">
             
 		<h3>Behavioral Styles</h3>
 		    <fieldset data-role="controlgroup">
@@ -207,7 +210,7 @@
                     </fieldset>
 	    </div>
             
-	    <div data-role="page" data-theme="a" id="newcl8" data-add-back-btn="true">    
+	    <div data-role="page" data-theme="a" id="disc" data-add-back-btn="true">    
                 <h4>DISC Assessment (Rank -10 to 10)</h4>
                     <label for="dom">Dominance: calculating vs. agressive.</label>
                         <input type="range" data-theme="b" name="dom" id="dom" value="0" min="-10" max="10"  />
